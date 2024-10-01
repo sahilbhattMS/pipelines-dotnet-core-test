@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: windows-latest
+  vmImage: ubuntu-latest
 
 steps:
 - script: echo Hello, world!
@@ -20,7 +20,7 @@ steps:
 
 - task: PythonInstaller@1
   inputs:
-    versionSpec: '3.9.13'
+    versionSpec: '3.8.19'
     pythonSourceOption: 'PythonDistribution'
     addToPath: false
     architecture: 'x86'
