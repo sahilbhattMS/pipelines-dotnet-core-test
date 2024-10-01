@@ -22,5 +22,5 @@ steps:
   inputs:
     versionSpec: '3.8.19'
     pythonSourceOption: 'PythonDistribution'
-    addToPath: false
-    architecture: 'x86'
+    addToPath: true
+    architecture: 'x64'
