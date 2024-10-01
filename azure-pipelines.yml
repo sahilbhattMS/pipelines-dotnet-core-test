@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: windows-latest
+  vmImage: ubuntu-latest
 
 steps:
 - script: echo Hello, world!
@@ -19,7 +19,7 @@ steps:
   displayName: 'Run a multi-line script'
 - task: PythonInstaller@1
   inputs:
-    versionSpec: '3.12.6'
+    versionSpec: '3.9.13'
     pythonSourceOption: 'PythonDistribution'
     addToPath: true
-    architecture: 'x86'
+    architecture: 'x64'
