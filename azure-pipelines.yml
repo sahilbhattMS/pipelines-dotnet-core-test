@@ -20,7 +20,7 @@ steps:
 
 - task: PythonInstaller@1
   inputs:
-    versionSpec: '3.6.15'
+    versionSpec: '3.10.0'
     pythonSourceOption: 'PythonDistribution'
     addToPath: true
     architecture: 'x64'
