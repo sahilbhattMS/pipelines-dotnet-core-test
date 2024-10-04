@@ -23,3 +23,8 @@ steps:
     pythonSourceOption: 'PythonDistribution'
     addToPath: true
     architecture: 'x64'
+  
+- script: 
+    python3 -v
+    python -v
+  displayName: 'Display python version'
