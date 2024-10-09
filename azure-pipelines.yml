@@ -6,6 +6,17 @@
 trigger:
 - master
 
+strategy:
+  matrix:
+    linux:
+      imageName: "ubuntu-latest"
+    mac:
+      imageName: "macOS-latest"
+    windows:
+      imageName: "windows-latest"
+  maxParallel: 3
+
+
 pool:
   vmImage: windows-latest
 
@@ -17,9 +28,10 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
+
 - task: PythonInstaller@1
   inputs:
-    versionSpec: '3.11.9'
+    versionSpec: '3.12.7'
     pythonSourceOption: 'PythonDistribution'
     addToPath: true
     architecture: 'x64'
