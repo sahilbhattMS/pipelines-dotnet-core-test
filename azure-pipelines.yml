@@ -19,12 +19,12 @@ steps:
   displayName: 'Run a multi-line script'
 - task: PythonInstaller@1
   inputs:
-    versionSpec: '3.10.0'
+    versionSpec: '3.11.9'
     pythonSourceOption: 'PythonDistribution'
     addToPath: true
     architecture: 'x64'
   
-- script: 
+- script: |
     python3 -v
     python -v
   displayName: 'Display python version'
