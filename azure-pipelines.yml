@@ -25,6 +25,10 @@ steps:
     architecture: 'x64'
   
 - script: |
-    python3 -v
-    python -v
+    echo Now showing for command: python3
+    python3 -V
+    which python3
+    echo Now showing for command: python
+    python -V
+    which python
   displayName: 'Display python version'
