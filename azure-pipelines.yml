@@ -18,16 +18,16 @@ strategy:
 
 
 pool:
-  vmImage: windows-latest
+  vmImage: $(imageName)
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+# - script: echo Hello, world!
+#   displayName: 'Run a one-line script'
 
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+# - script: |
+#     echo Add other tasks to build, test, and deploy your project.
+#     echo See https://aka.ms/yaml
+#   displayName: 'Run a multi-line script'
 
 - task: PythonInstaller@1
   inputs:
@@ -36,11 +36,11 @@ steps:
     addToPath: true
     architecture: 'x64'
   
-- script: |
-    echo Now showing for command: python3
-    python3 -V
-    which python3
-    echo Now showing for command: python
-    python -V
-    which python
-  displayName: 'Display python version'
+# - script: |
+#     echo Now showing for command: python3
+#     python3 -V
+#     which python3
+#     echo Now showing for command: python
+#     python -V
+#     which python
+#   displayName: 'Display python version'
